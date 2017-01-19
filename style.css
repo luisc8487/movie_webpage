@@ -1,6 +1,7 @@
 .header{
     margin:auto;
     padding:15%;
+    height:10px;
 }
 .header-content-inner {
     position: relative;
@@ -19,10 +20,13 @@
 }
 #description{
     margin:auto;
-    padding:15%;
+    padding:5%;
     background-color:#E82C0C;
+    background:linear-gradient(to bottom right,#FF5F54,#E86D4F);
 }
 .container{
+    /*float:top right;*/
+    margin:auto;
     text-align:center;
     border:20px;
     padding:50px
@@ -38,27 +42,70 @@ img{
     /*border:5px solid lightblue;*/
     border:20px;
     margin-bottom:20px;
+    transition:transform 2s;
+    animation-iteration-count: 3
 }
 #mask_1{
     float:right;
+    transition:transform 2s;
+    /*background:rgb(125,149,153);*/
+    position: relative;
 }
+#mask_1:hover{
+    transform: rotateY(360deg);
+}
+/*#mask_1:hover{*/
+    /*color:rgb(255,90,66);*/
+/*    background:rgb(125,149,153);*/
+/*}*/
 #mask_2{
     float:left;
+    transition:transform 2s; 
+}
+#mask_2:hover{
+    transform: rotateY(180deg);
 }
 p{
-    color:green;
+    color:lightgray;
+    text-shadow: 2px 2px black;
+    position:relative;
     font-family:sans-serif ;
+    animation:mymove 2s;
 }
+@keyframes mymove{
+    0%{opacity:0;left:-400px;}
+    100%{opacity:1;left:0px;}
+    /*position:absolute*/
+}
+
 h1{
-    color:blue;
+    border-left: 6px solid red;
+    background-color: lightgrey;
     font-family: monospace;
+    text-shadow: 2px 2px gray;
     color:white;
+    animation-name:example;
+    animation-duration:2s;
+    /*animation-timing-function:ease;*/
+}
+@keyframes example{
+    0% {opacity: 0;}
+    100% {opacity:1;}
 }
 h2{
-    color:gray;
+
+    color:lightgray;
+    text-shadow: 2px 2px black;
+    animation-name:example;
+    position: relative;
+    animation-duration: 2s;
+}
+@keyframes example{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 .info{
-    color:gray;
+    color:lightgray;
 }
 .dark{
     border-color:#E82C0C;
@@ -66,7 +113,19 @@ h2{
     max-width: 50px;
 }
 .light{
+    /*position: relative;*/
+    /*margin:auto;*/
     border-color:white;
     border-width:2px;
-    max-width:30%;
+    width:30%;
+    transition:width 2s;
+    transition-timing-function: ease-in-out;
+    /*margin-left: 5px*/
+}
+.light:hover{
+    width:60%;
+}
+#description{
+    max-width: 100%;
+    height:400px;
 }
