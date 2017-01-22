@@ -109,8 +109,8 @@ h2{
     max-width: 50px;
 }
 .light{
-    position: relative;
-    margin:auto;
+    /*position: relative;*/
+    /*margin:auto;*/
     border-color:white;
     border-width:2px;
     width:30%;
