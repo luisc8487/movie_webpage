@@ -13,7 +13,7 @@
 #background{
     background-image: url("luchador-background.jpg");
     background-repeat: no-repeat;
-    background-size: cover;S
+    background-size: cover;
     max-height:100%;
     max-width:100%;
     margin:auto;
@@ -21,7 +21,7 @@
 #description{
     margin:auto;
     padding:5%;
-    background: linear-gradient(to bottom right, #E82C0C, #E88F39);
+    background: linear-gradient(to bottom right, #E82C0C, #FF8A4B);
 }
 .container{
     /*float:top right;*/
@@ -46,19 +46,22 @@ img{
 }
 #mask_1{
     float:right;
-    /*transition:all ease .5s;*/
+    transition:transform 2s;
     /*background:rgb(125,149,153);*/
     position: relative;
 }
-@keyframes threed{
-    transform: rotateY(180deg);
-}
-/*#mask_1:hover{*/
-    /*color:rgb(255,90,66);*/
-/*    background:rgb(125,149,153);*/
+/*@keyframes threed{*/
+/*    transform: rotateY(180deg);*/
 /*}*/
+#mask_1:hover{
+    transform: rotateY(360deg);
+}
 #mask_2{
     float:left;
+    transition: transform 2s;
+}
+#mask_2:hover{
+    transform: rotateY(360deg);
 }
 p{
     color:lightgray;
