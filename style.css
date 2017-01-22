@@ -13,7 +13,7 @@
 #background{
     background-image: url("luchador-background.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;S
     max-height:100%;
     max-width:100%;
     margin:auto;
@@ -21,7 +21,7 @@
 #description{
     margin:auto;
     padding:5%;
-    background-color:#E82C0C;
+    background: linear-gradient(to bottom right, #E82C0C, #E88F39);
 }
 .container{
     /*float:top right;*/
@@ -62,6 +62,7 @@ img{
 }
 p{
     color:lightgray;
+    text-shadow: 2px 2px 4px #000000;
     position:relative;
     font-family:sans-serif ;
     animation:mymove 2s;
@@ -78,6 +79,8 @@ h1{
     animation-name:example;
     animation-duration:2s;
     /*animation-timing-function:ease;*/
+    border-left: 6px solid red;
+    background-color: lightgrey;
 }
 @keyframes example{
     0% {opacity: 0;}
@@ -85,6 +88,7 @@ h1{
 }
 h2{
     color:lightgray;
+    text-shadow: 2px 2px 4px #000000;
     animation-name:example;
     position: relative;
     animation-duration: 2s;
