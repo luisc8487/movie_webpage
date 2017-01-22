@@ -21,15 +21,11 @@
     margin:auto;
     padding:15%;
     background-color:#E82C0C;
-    background: linear-gradient(red, purple); /*changes from red to purple*/
-    
-    
 }
 .container{
     text-align:center;
     border:20px;
     padding:50px
-    
 }
 .col-lg-8 col-lg-offset-2 text-center{
     text-align: center;
@@ -42,22 +38,13 @@ img{
     /*border:5px solid lightblue;*/
     border:20px;
     margin-bottom:20px;
-    
 }
 #mask_1{
     float:right;
-     transform: rotate(90deg)
-     
 }
 #mask_2{
     float:left;
-     transform: rotate(90deg)
-     
-}  
-
-    
-
-
+}
 p{
     color:green;
     font-family:sans-serif ;
@@ -66,12 +53,6 @@ h1{
     color:blue;
     font-family: monospace;
     color:white;
-    text-shadow: 4px 4px blue;
-    transition: height 5s;
-    transition-delay: width 2s;
-
-    
-    
 }
 h2{
     color:gray;
@@ -87,10 +68,4 @@ h2{
 .light{
     border-color:white;
     border-width:2px;
-    max-width:30%;
-}
-div:hover {
-    width: 450px;/*hover over the background image to change its height and width*/
-}
-
-
+    max-width:40%
